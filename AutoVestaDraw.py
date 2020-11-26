@@ -169,7 +169,8 @@ def get_version():
 
 if __name__ == '__main__':
     import argparse
-    parser = argparse.ArgumentParser(description='Draw vaspcar file or cif file by VESTA automatically.')
+    parser = argparse.ArgumentParser(description='Draw vaspcar file or cif file by VESTA automatically.',
+                                     epilog='Without [-df | -w | -l] option will only draw by the file in the current directory.')
     parser.add_argument('-v', '--version', action='version', version=get_version(),help='Display version')
     parser.add_argument('-f','--input_filename', type=str, action='store', default='CONTCAR',
                         help='The name of file you want to draw. [Optional] [default=CONTCAR] ')
@@ -178,7 +179,7 @@ if __name__ == '__main__':
     group.add_argument('-df','--dir_file', type=str, action='store',
                        help='Conflicts with -w -l option. The input file with the path list of folder you want to draw (One line writes one path). [Optional]')
     group.add_argument('-w','--walk', action='store_true', default=False,
-                       help='Conflicts with -df -l option. Traverse all folders (depth=max) in the current working directory. [Optional] [default=False] ')
+                       help='Conflicts with -df -l option. Traverse all folders (depth=max) in the current directory. [Optional] [default=False] ')
     group.add_argument('-l','--loop_through', action='store_true', default=False,
                        help='Conflicts with -df -w option. Loop through all subfolders (depth=1) under the current folder. [Optional] [default=False] ')
     

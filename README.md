@@ -28,5 +28,6 @@ optional arguments:
   Conflicts with -df -w option. Loop through all subfolders (depth=1) under the current folder.
                         [Optional] [default=False]
 
+Without [-df | -w | -l] option will only draw by the file in the current directory.
 
 ![image](https://github.com/kiviwan/AutoVestaDraw/blob/main/demo.gif?raw=true)
