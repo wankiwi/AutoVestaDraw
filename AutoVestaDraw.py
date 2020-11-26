@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 __author__ = 'wankw (wankaiweii@gamil.com)' 
 
 import os
@@ -17,8 +14,6 @@ vesta_path = r'E:\Academic_Software\VESTA-win64\VESTA-win64\VESTA.exe'
 button_image_path = r'E:\System\Desktop\AVD\button_image'
 maxtrytime = 15
 
-
-# In[2]:
 
 
 def open_vesta():
@@ -34,8 +29,6 @@ def open_vesta():
     pag.hotkey('alt','space','x')
     
 
-
-# In[3]:
 
 
 def click_button(button_figure,click=1):
@@ -61,8 +54,6 @@ def click_button_left(button_figure,click=1):
             os._exit(0)
     pag.click((button[0], button[1]+button[3]/2),clicks=click,interval=0.05)
 
-
-# In[5]:
 
 
 def export_raster_image(filename,tifname):
@@ -94,7 +85,6 @@ def export_raster_image(filename,tifname):
     pag.hotkey('ctrl','w')
 
 
-# In[6]:
 
 
 def draw_vesta_figure(filename,tifname):    
@@ -103,8 +93,6 @@ def draw_vesta_figure(filename,tifname):
     export_raster_image(filename,tifname)
     print ('VESTA draw successfully!')
 
-
-# In[38]:
 
 
 def draw_in_all_folders(path_list, filename):
@@ -128,8 +116,6 @@ def draw_in_all_folders(path_list, filename):
             path_name = path.replace('\\',' ').replace(':', '')
             copy(fr'{path}\{tifname}-{filename}-top.tif',fr'{ori_path}\{path_name}-{filename}-top.tif') 
 
-
-# In[8]:
 
 
 def get_path_list_from_file(dir_file,filename):
@@ -158,7 +144,6 @@ def get_all_folder_path_list(filename):
     return path_list
 
 
-# In[10]:
 
 
 def get_subfolder_path_list(filename):
@@ -174,14 +159,12 @@ def get_subfolder_path_list(filename):
     return path_list
 
 
-# In[42]:
 
 
 def get_version():
     return '1.0 (2020.11.26, wankaiweii@gamil.com)'
 
 
-# In[ ]:
 
 
 if __name__ == '__main__':
