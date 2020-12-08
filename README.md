@@ -4,8 +4,8 @@ A tool for drawing vaspcar file or cif file by VESTA automatically.
 ### `usage: AutoVestaDraw.py [-h] [-v] [-f INPUT_FILENAME] [-df DIR_FILE | -w | -l]`
 
 Draw vaspcar file or cif file by VESTA automatically.  
-optional arguments:
 
+optional arguments:  
   **-h, --help**            show this help message and exit  
   **-v, --version**         Display version  
   **-f INPUT_FILENAME, --input_filename INPUT_FILENAME**  
