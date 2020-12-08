@@ -1,10 +1,12 @@
 # AutoVestaDraw
-A tool for drawing vaspcar file or cif file by VESTA automatically.
+A tool for drawing vaspcar file or cif file by VESTA automatically.  
+**`usage: AutoVestaDraw.py [-h] [-v] [-f INPUT_FILENAME] [-df DIR_FILE | -w | -l]`**
 
-**<font size="20">usage: AutoVestaDraw.py [-h] [-v] [-f INPUT_FILENAME] [-df DIR_FILE | -w | -l]</font>**
+@settings {
+  font-size: 100;
+}
 
-Draw vaspcar file or cif file by VESTA automatically.
-
+Draw vaspcar file or cif file by VESTA automatically.  
 optional arguments:
 
   **-h, --help**            show this help message and exit  
