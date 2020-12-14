@@ -1,6 +1,6 @@
 # AutoVestaDraw
 A tool for drawing vaspcar file or cif file by VESTA automatically.  
-Required packages: (1) pyautogui > 0.9.52 (2) opencv > 4.0
+Required packages: (1) pyautogui > 0.9.52 (2) opencv > 4.0.0 (3) VESTA > 3.5.0
 
 ### `usage: AutoVestaDraw.py [-h] [-v] [-f INPUT_FILENAME] [-df DIR_FILE | -w | -l]`
 
